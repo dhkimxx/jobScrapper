@@ -11,7 +11,7 @@
 4. 커리어([career](http://www.career.co.kr/))
 5. 인디드([indeed](https://kr.indeed.com/))
 
-![page('/')](https://user-images.githubusercontent.com/79616878/115116659-bba5fc80-9fd5-11eb-95c1-c60a4f140e25.png)
+![page('/')](https://user-images.githubusercontent.com/79616878/115116914-1855e700-9fd7-11eb-9ba7-375f5abaab17.png)
 
 # 2. 스크랩한 정보를 웹페이지 상에 렌더링 후 사용자가 원할시 정보를 csv파일 형식으로 다운로드 제공
 
