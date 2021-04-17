@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Job Search</title>
+        <style>
+            section {
+                display: grid;
+                gap: 20px;
+                grid-template-columns: repeat(4,1fr);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Search Results </h1>
+        <form action="/report", method="get">
+            <select name='SearchingSite'>
+                <option value='' selected>-- 선택 --</option>
+                <option value='si'>saramin</option>
+                <option value='jk'>jobkorea</option>
+                <option value='ind_kr'>indeed(KR)</option>
+                <option value='incrt'>incruit</option>
+                <option value='crr'>career</option>
+            </select>
+            <input placeholder="Search for a job" rquired name="word">
+            <button>Search</button>
+        </form>
+        <h3>Found {{resultsNumber}} results for: {{searchingBy}}</h3>
+        <a href="/export?word={{searchingBy}}">Export to CSV</a>
+        <section>
+            <h4>Title</h4>
+            <h4>Company</h4>
+            <h4>Condition</h4>
+            <h4>Link</h4>
+            {% for job in jobs %}
+            {% if job: %}
+                <span>{{job.title}}</span>
+                <span>{{job.company}}</span>
+                <span>{{job.condition}}</span>
+                <a href="{{job.link}}" target="_blank">Apply</a>
+            {% endif %}
+            {% endfor %}
+        </section>
+    </body>
+</html>
