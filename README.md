@@ -16,7 +16,7 @@ https://nomadcoders.co/python-for-beginners/lobby
 
 ![page('/')](https://user-images.githubusercontent.com/79616878/115116914-1855e700-9fd7-11eb-9ba7-375f5abaab17.png)
 
-## 2. 한 정보를 웹페이지 상에 렌더링
+## 2. 스크랩한 정보를 웹페이지 상에 렌더링
 ##    csv파일 형식으로 다운로드 제공
 
 ![page('/report')](https://user-images.githubusercontent.com/79616878/115116715-0c1d5a00-9fd6-11eb-803a-d4f0034fc929.png)
